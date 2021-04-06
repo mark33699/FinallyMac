@@ -12,6 +12,7 @@
 		4D45E47C261C051900F42FC5 /* FinallyMac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D45E47A261C051900F42FC5 /* FinallyMac.xcdatamodeld */; };
 		4D45E47E261C051A00F42FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D45E47D261C051A00F42FC5 /* Assets.xcassets */; };
 		4D45E481261C051A00F42FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D45E47F261C051A00F42FC5 /* Main.storyboard */; };
+		4D45E48B261C275400F42FC5 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D45E48A261C275400F42FC5 /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		4D45E480261C051A00F42FC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D45E482261C051A00F42FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D45E483261C051A00F42FC5 /* FinallyMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinallyMac.entitlements; sourceTree = "<group>"; };
+		4D45E48A261C275400F42FC5 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				4D45E476261C051900F42FC5 /* AppDelegate.swift */,
 				4D45E478261C051900F42FC5 /* ViewController.swift */,
+				4D45E48A261C275400F42FC5 /* WindowController.swift */,
 				4D45E47D261C051A00F42FC5 /* Assets.xcassets */,
 				4D45E47F261C051A00F42FC5 /* Main.storyboard */,
 				4D45E482261C051A00F42FC5 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D45E479261C051900F42FC5 /* ViewController.swift in Sources */,
+				4D45E48B261C275400F42FC5 /* WindowController.swift in Sources */,
 				4D45E477261C051900F42FC5 /* AppDelegate.swift in Sources */,
 				4D45E47C261C051900F42FC5 /* FinallyMac.xcdatamodeld in Sources */,
 			);
