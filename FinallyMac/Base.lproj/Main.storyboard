@@ -710,26 +710,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <switch horizontalHuggingPriority="750" verticalHuggingPriority="750" baseWritingDirection="leftToRight" alignment="left" state="on" translatesAutoresizingMaskIntoConstraints="NO" id="6fM-EM-LsR">
-                                <rect key="frame" x="219" y="123" width="42" height="24"/>
-                                <connections>
-                                    <action selector="toggle:" target="XfG-lQ-9wD" id="dUa-s8-L4S"/>
-                                </connections>
-                            </switch>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sbb-Ag-NQB">
-                                <rect key="frame" x="206" y="85" width="69" height="16"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Hello Mac" id="vSD-LM-Fje">
-                                    <font key="font" usesAppearanceFont="YES"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="31I-Ft-oWZ">
+                                <rect key="frame" x="208" y="98" width="65" height="74"/>
+                                <subviews>
+                                    <switch horizontalHuggingPriority="750" verticalHuggingPriority="750" baseWritingDirection="leftToRight" alignment="left" state="on" translatesAutoresizingMaskIntoConstraints="NO" id="6fM-EM-LsR">
+                                        <rect key="frame" x="11" y="51" width="42" height="24"/>
+                                        <connections>
+                                            <action selector="toggle:" target="XfG-lQ-9wD" id="dUa-s8-L4S"/>
+                                        </connections>
+                                    </switch>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sbb-Ag-NQB">
+                                        <rect key="frame" x="-2" y="29" width="69" height="16"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Hello Mac" id="vSD-LM-Fje">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z8b-Ng-aL9">
+                                        <rect key="frame" x="-2" y="-7" width="68" height="32"/>
+                                        <buttonCell key="cell" type="push" title="alert" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gMF-bx-2TZ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="tap:" target="XfG-lQ-9wD" id="grz-IM-0F3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="sbb-Ag-NQB" firstAttribute="top" secondItem="6fM-EM-LsR" secondAttribute="bottom" constant="24" id="QRg-8j-Dld"/>
-                            <constraint firstItem="sbb-Ag-NQB" firstAttribute="centerX" secondItem="6fM-EM-LsR" secondAttribute="centerX" id="RZ3-nb-aqF"/>
-                            <constraint firstItem="6fM-EM-LsR" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="kbZ-oy-8pt"/>
-                            <constraint firstItem="6fM-EM-LsR" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="pJZ-Zf-xMY"/>
+                            <constraint firstItem="31I-Ft-oWZ" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="9IC-30-Y4E"/>
+                            <constraint firstItem="31I-Ft-oWZ" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="vWt-K5-hwy"/>
                         </constraints>
                     </view>
                     <connections>

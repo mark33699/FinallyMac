@@ -19,5 +19,12 @@ class ViewController: NSViewController {
         label.stringValue = sender.state == .on ? "Hello Mac" : "Goodbye Mac"
     }
     
+    @IBAction func tap(_ sender: Any) {
+        if NSAlert.alertOkCancel(title: "請選擇", message: "好不好嘛～") {
+            print("YES")
+        } else {
+            print("NO")
+        }
+    }
 }
 
